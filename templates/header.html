@@ -1,0 +1,22 @@
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+  <div class="col-md-3 mb-2 mb-md-0">
+    <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none" previewlistener="true">
+      <svg class="bi" width="40" height="30" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+  </div>
+
+  <ul style="margin-left: -30%;" class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+    <li><a href="{{ url_for('main_page') }}" class="nav-link px-2 link-secondary">Главная</a></li>
+    <li><a href="{{ url_for('create_es') }}" class="nav-link px-2">Создать имущество</a></li>
+    <li><a href="{{ url_for('change_es') }}" class="nav-link px-2">Изменить имущество</a></li>
+    <li><a href="{{ url_for('create_ad') }}" class="nav-link px-2">Создать объявление</a></li>
+    <li><a href="{{ url_for('change_ad') }}" class="nav-link px-2">Изменить объявление</a></li>
+    <li><a href="{{ url_for('buy') }}" class="nav-link px-2">Купить</a></li>
+  </ul>
+
+  <div class="col-md-3 text-end">
+    <form style="padding: 0%; border: none; outline: none;" action="{{ url_for('index') }}" method="post">
+      <button type="submit" class="btn btn-outline-primary me-2">Выйти</button>
+    </form>
+  </div>
+</header>
